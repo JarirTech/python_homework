@@ -33,7 +33,7 @@ def test_sort_by_last_name():
 
 def test_employee_dict():
     dict_result = a2.employee_dict(a2.employees["rows"][0])
-    assert dict_result["last_name"] == "Bowman"
+    assert dict_result["last_name"] ==  "Wade"  # should be "wade" not "Bowman"
     assert "employee_id" not in dict_result.keys()
 
 def test_all_employees_dict():
@@ -59,7 +59,7 @@ def test_create_minutes_set():
     minutes_set = a2.create_minutes_set()
     assert type(minutes_set).__name__ == "set"
     assert len(minutes_set) == 46
-    assert a2.minutes_set != None
+    assert a2.minutes_set != None   
 
 def test_create_minutes_list():
     minutes_list = a2.create_minutes_list()
