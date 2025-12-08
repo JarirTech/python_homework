@@ -1,0 +1,24 @@
+function: hello_world
+positional parameters: ()
+keyword parameters: {}
+return: None
+function: hello_world
+positional parameters: ()
+keyword parameters: {}
+return: None
+function: var_num
+positional parameters: (6, 7, 8)
+keyword parameters: {}
+return: True
+function: hello_world
+positional parameters: ()
+keyword parameters: {}
+return: None
+function: var_num
+positional parameters: (6, 7, 8)
+keyword parameters: {}
+return: True
+function: log_dec
+positional parameters: ()
+keyword parameters: {'state': 'MA', 'city': 'Boston', 'zipcode': '02108'}
+return: <function logger_decorator at 0x000001AAB436F9C0>
