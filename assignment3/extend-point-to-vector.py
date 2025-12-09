@@ -16,13 +16,13 @@ class Point:
     
     # method for string representation
     def __str__(self):
-        print(f'Point at ({self.x}, {self.y})')
+        #print(f'Point at ({self.x}, {self.y})') ### commented  print()
         return f'Point at ({self.x}, {self.y})'
 
     # euclidian distance between 2 points point(x,y) and point1(x,y)
 
     def ecludian_dist(self, point1): # \(d=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}\)
-        d = math.sqrt((self.x-point1.x)**2 +(self.x-point1.y)**2)
+        d = math.sqrt((self.x-point1.x)**2 +(self.y-point1.y)**2)  ####  fixed logical error
         return round(d,2)
    
          
