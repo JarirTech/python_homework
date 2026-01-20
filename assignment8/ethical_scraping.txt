@@ -1,0 +1,59 @@
+1.Which sections of the website are restricted for crawling?
+Disallow: /w/
+Disallow: /api/
+Disallow: /trap/
+Disallow: /wiki/Special:
+Disallow: /wiki/Spezial:
+Disallow: /wiki/Spesial:
+Disallow: /wiki/Special%3A
+Disallow: /wiki/Spezial%3A
+Disallow: /wiki/Spesial%3A
+Disallow: /wiki/%D8%AE%D8%A7%D8%B5:Search
+Disallow: /wiki/%D8%AE%D8%A7%D8%B5%3ASearch
+------------------------------------------------------------------------------------------------
+2.Are there specific rules for certain user agents?
+
+Yes, there are some user agents are completly disallowed such as:
+User-agent: MJ12bot
+Disallow: /
+User-agent: Mediapartners-Google*
+Disallow: /
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Fetch
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: linko
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+And some user have limited permission with delay such as:
+User-agent: SemrushBot
+Crawl-delay: 5
+Some other user are have allowable scrawling :
+Allow: /w/api.php?action=mobileview&
+Allow: /w/load.php?
+Allow: /api/rest_v1/?doc
+
+-----------------------------------------------------------------------------------------
+3.Reflect on why websites use robots.txt and write 2-3 sentences explaining its purpose and how 
+it promotes ethical scraping. Put these in ethical_scraping.txt in your python_homework directory.
+
+Websites use a file called robots.txt to tell bots which pages they can and cannot visit. 
+This helps protect private data and prevents bots from slowing down the site. 
+So for web scraping, it is very important to follow these rules to stay ethical and avoid getting blocked.
