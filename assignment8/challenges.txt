@@ -1,0 +1,4 @@
+The challenges that I faced in the assignment6 is finding  stable css selectors and xpaths. 
+For the vulnerabilities list I couldn't found a css selector or xpath to use it and use loop for each item. 
+So I had to create each vulnerability with its specific xpath with href lind and text() function to locate each element. Also I had to use * to unpack the find_element
+tuple. And didn't use selenium expliciti or implicit wait just used sleep() even that not recommanded on automation 
