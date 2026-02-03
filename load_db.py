@@ -11,7 +11,7 @@ if os.path.exists(db_path):
     os.remove(db_path)
 
 with sqlite3.connect("./db/lesson.db",isolation_level='IMMEDIATE') as conn:    
-    conn = sqlite3.connect("./db/lesson.db",isolation_level='IMMEDIATE')
+    #conn = sqlite3.connect("./db/lesson.db",isolation_level='IMMEDIATE')
     conn.execute("PRAGMA foreign_keys = 1")
     cursor = conn.cursor()
     # customer_name,contact,street,city,country,postal_code,phone
